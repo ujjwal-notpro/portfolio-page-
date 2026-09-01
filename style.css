@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #e2e8f0;    
+    line-height: 1.6;
+    background:url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+header {
+    min-height: 100vh;
+    background:linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+}
+h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    margin-bottom: 5px;
+    letter-spacing: 6px;
+
+}
+header>h2 {
+    text-align: center;
+    letter-spacing: 23px;
+    font-size: 2rem;
+}
+
+section {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(15, 29, 82, 0.3);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+section:hover {
+    transform: translateY(-3px);
+    border-color: #38bdf8;
+}
+section h2 {
+    font-size: 1.5rem;
+    color: #60a5fa; 
+    margin-bottom: 15px;
+    border-bottom: 2px solid #38bdf8;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+section h3 {
+    font-size: 1.2rem;
+    color: #f1f5f9;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+p {
+    color: #cbd5e1;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #cbd5e1;
+    font-size: 1rem;
+}
+a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+section a[href*="http"], 
+section a[href=""] {
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+section a[href*="http"]:hover, 
+section a[href=""]:hover {
+    background: #1d4ed8;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+}
+section:last-of-type a {
+    background: none;
+    padding: 0;
+    display: inline;
+}
+
+section:last-of-type a:hover {
+    text-decoration: underline;
+}
