@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in Portfolio</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h2 class="logo">Editkaro<span>.in</span></h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero" id="home">
+            <h1>Creative Video Editing Portfolio</h1>
+            <p>Short Form Videos • Long Form Videos • Ads • Anime Edits • Color Grading</p>
+            <a href="#portfolio" class="btn">View Work</a>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2 class="section-title">Our Portfolio</h2>
+
+        <div class="filter-buttons">
+            <button onclick="filterSelection('all')">All</button>
+            <button onclick="filterSelection('short')">Short Form</button>
+            <button onclick="filterSelection('long')">Long Form</button>
+            <button onclick="filterSelection('gaming')">Gaming</button>
+            <button onclick="filterSelection('ads')">Ads</button>
+            <button onclick="filterSelection('anime')">Anime</button>
+        </div>
+
+        <div class="gallery">
+
+            <div class="card short">
+                <video autoplay loop muted playsinline>
+                    <source src="videos/reel.mp4" type="video/mp4">
+                </video>
+                <h3>Instagram Reel Edit</h3>
+            </div>
+
+            <div class="card long">
+                <video autoplay loop muted playsinline>
+                    <source src="videos/documentry.mp4" type="video/mp4">
+                </video>
+                <h3>YouTube Documentary</h3>
+            </div>
+
+            <div class="card gaming">
+                <video autoplay loop muted playsinline>
+                    <source src="videos/montage.mp4" type="video/mp4">
+                </video>
+                <h3>Gaming Montage</h3>
+            </div>
+
+            <div class="card ads">
+                <video autoplay loop muted playsinline>
+                    <source src="videos/Advertisement.mp4" type="video/mp4">
+                </video>
+                <h3>Product Advertisement</h3>
+            </div>
+
+            <div class="card anime">
+                <video autoplay loop muted playsinline>
+                    <source src="videos/animeedit.mp4" type="video/mp4">
+                </video>
+                <h3>Anime AMV Edit</h3>
+            </div>
+
+            <div class="card short">
+                <video autoplay loop muted playsinline>
+                    <source src="videos/trend.mp4" type="video/mp4">
+                </video>
+                <h3>Trending Reel</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Editkaro.in</h2>
+
+        <p>
+            Editkaro.in is a creative video editing and social media marketing agency.
+            We specialize in creating engaging short-form content, long-form videos,
+            gaming edits, e-commerce advertisements, anime edits, and professional
+            color grading services.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact-box">
+            <p>Email: contact@editkaro.in</p>
+            <p>Phone: +91 9871838514</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Editkaro.in | Creative Video Editing Portfolio</p>
+    </footer>
+
+    <script src="script3.js"></script>
+
+</body>
+</html>

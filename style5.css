@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    min-height:100vh;
+    background:linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1492691527719-9d1e07e534b4");
+    background-size:cover;
+    background-position:center;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    color:white;
+}
+
+.logo span{
+    color:#00d4ff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    text-align:center;
+    margin-top:150px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:1.1rem;
+}
+
+.btn{
+    background:#00d4ff;
+    color:black;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.section-title{
+    text-align:center;
+    margin:60px 0 30px;
+    font-size:2rem;
+}
+
+.filter-buttons{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.filter-buttons button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    cursor:pointer;
+    border-radius:20px;
+    background:#00d4ff;
+    font-weight:bold;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    padding:30px 8%;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card video{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+    text-align:center;
+}
+
+#about,
+#contact{
+    padding:50px 10%;
+    text-align:center;
+}
+
+.contact-box{
+    background:#1e293b;
+    padding:25px;
+    border-radius:10px;
+    max-width:500px;
+    margin:auto;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+}
